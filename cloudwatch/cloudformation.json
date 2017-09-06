@@ -1,0 +1,59 @@
+{
+	"version": "0",
+	"id": "ddddddd-259f-b9f7-3333-45030baaa066",
+	"detail-type": "AWS API Call via CloudTrail",
+	"source": "aws.cloudformation",
+	"account": "1234",
+	"time": "2017-01-01T22:05:38Z",
+	"region": "us-east-2",
+	"resources": [],
+	"detail": {
+		"eventVersion": "1.05",
+		"userIdentity": {
+			"type": "IAMUser",
+			"principalId": "ssdfsf23423g",
+			"arn": "arn:aws:iam::1234:user/name@email.com",
+			"accountId": "1234",
+			"accessKeyId": "afsgdgsg123123",
+			"userName": "user@company.com",
+			"sessionContext": {
+				"attributes": {
+					"mfaAuthenticated": "false",
+					"creationDate": "2017-09-05T21:55:29Z"
+				}
+			},
+			"invokedBy": "signin.amazonaws.com"
+		},
+		"eventTime": "2017-01-01T22:05:38Z",
+		"eventSource": "cloudformation.amazonaws.com",
+		"eventName": "CreateStack",
+		"awsRegion": "us-east-2",
+		"sourceIPAddress": "255.255.255.2",
+		"userAgent": "signin.amazonaws.com",
+		"requestParameters": {
+			"parameters": [{
+					"parameterKey": "DBName"
+				}, {
+					"parameterKey": "DBPassword"
+				}, {
+					"parameterKey": "DBRootPassword"
+				}, {
+					"parameterKey": "DBUser"
+				}, {
+					"parameterKey": "InstanceType"
+				}, {
+					"parameterKey": "KeyName"
+				}, {
+					"parameterKey": "SSHLocation"
+				}
+			],
+			"templateURL": "https://s3-external-1.amazonaws.com/cloudformation-templates-us-east-1/LAMP_Single_Instance.template"
+		},
+		"responseElements": {
+			"stackId": "12345"
+		},
+		"requestID": "f31234124-9286-ffff-aaaa-1b9bd0c778df",
+		"eventID": "50668eff-4444-49c9-5555-8755234c96b8",
+		"eventType": "AwsApiCall"
+	}
+}
