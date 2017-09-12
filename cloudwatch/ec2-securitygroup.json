@@ -1,50 +1,56 @@
 {
-	"eventVersion": "1.05",
-	"eventID": "123-1f14-4bd9-123-522323",
-	"eventTime": "2017-01-1T17:58:15Z",
-	"requestParameters": {
-		"ipPermissions": {
-			"items": [{
-					"prefixListIds": {},
-					"fromPort": 1239,
-					"ipRanges": {
-						"items": [{
-								"cidrIp": "123.123.123.224/32"
-							}
-						]
-					},
-					"groups": {},
-					"toPort": 1239,
-					"ipProtocol": "tcp",
-					"ipv6Ranges": {}
+	"account": "1234",
+	"region": "us-east-1",
+	"detail": {
+		"eventVersion": "1.05",
+		"eventID": "123-1f14-4bd9-123-522323",
+		"eventTime": "2017-01-1T17:58:15Z",
+		"requestParameters": {
+			"ipPermissions": {
+				"items": [
+					{
+						"prefixListIds": {},
+						"fromPort": 1239,
+						"ipRanges": {
+							"items": [
+								{
+									"cidrIp": "123.123.123.224/32"
+								}
+							]
+						},
+						"groups": {},
+						"toPort": 1239,
+						"ipProtocol": "tcp",
+						"ipv6Ranges": {}
+					}
+				]
+			},
+			"groupId": "sg-12345"
+		},
+		"eventType": "AwsApiCall",
+		"responseElements": {
+			"_return": true
+		},
+		"awsRegion": "us-east-1",
+		"eventName": "AuthorizeSecurityGroupIngress",
+		"userIdentity": {
+			"userName": "test",
+			"principalId": "12345",
+			"accessKeyId": "12345",
+			"invokedBy": "signin.amazonaws.com",
+			"sessionContext": {
+				"attributes": {
+					"creationDate": "2017-01-1T16:31:55Z",
+					"mfaAuthenticated": "true"
 				}
-			]
+			},
+			"type": "IAMUser",
+			"arn": "arn:aws:iam::1234:user/test",
+			"accountId": "12345"
 		},
-		"groupId": "sg-12345"
-	},
-	"eventType": "AwsApiCall",
-	"responseElements": {
-		"_return": true
-	},
-	"awsRegion": "us-east-1",
-	"eventName": "AuthorizeSecurityGroupIngress",
-	"userIdentity": {
-		"userName": "test",
-		"principalId": "12345",
-		"accessKeyId": "12345",
-		"invokedBy": "signin.amazonaws.com",
-		"sessionContext": {
-			"attributes": {
-				"creationDate": "2017-01-1T16:31:55Z",
-				"mfaAuthenticated": "true"
-			}
-		},
-		"type": "IAMUser",
-		"arn": "arn:aws:iam::1234:user/test",
-		"accountId": "12345"
-	},
-	"eventSource": "ec2.amazonaws.com",
-	"requestID": "123-bbb3-123-a6bb-5555",
-	"userAgent": "signin.amazonaws.com",
-	"sourceIPAddress": "123.123.123.123"
+		"eventSource": "ec2.amazonaws.com",
+		"requestID": "123-bbb3-123-a6bb-5555",
+		"userAgent": "signin.amazonaws.com",
+		"sourceIPAddress": "123.123.123.123"
+	}
 }
