@@ -1,0 +1,21 @@
+{
+	"Records": [{
+			"EventSource": "aws:sns",
+			"EventVersion": "1.0",
+			"EventSubscriptionArn": "arn:aws:sns:us-east-1:1234:AWS",
+			"Sns": {
+				"Type": "Notification",
+				"MessageId": "234234234",
+				"TopicArn": "arn:aws:sns:us-east-1:12345235:test_sns",
+				"Subject": "AWS CloudFormation Notification",
+				"Message": "Hello World",
+				"Timestamp": "2017-09-1:14:23.048Z",
+				"SignatureVersion": "1",
+				"Signature": "really long string",
+				"SigningCertUrl": "URL",
+				"UnsubscribeUrl": "URL",
+				"MessageAttributes": {}
+			}
+		}
+	]
+}
