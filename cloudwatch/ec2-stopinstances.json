@@ -1,0 +1,53 @@
+{
+	"eventVersion": "1.05",
+	"userIdentity": {
+		"type": "IAMUser",
+		"principalId": "123456",
+		"arn": "arn:aws:iam::12345:user/test",
+		"accountId": "123456",
+		"accessKeyId": "123456",
+		"userName": "test",
+		"sessionContext": {
+			"attributes": {
+				"mfaAuthenticated": "true",
+				"creationDate": "2017-01-1T04:11:10Z"
+			}
+		},
+		"invokedBy": "signin.amazonaws.com"
+	},
+	"eventTime": "2017-01-1T11:11:03Z",
+	"eventSource": "ec2.amazonaws.com",
+	"eventName": "StopInstances",
+	"awsRegion": "us-east-1",
+	"sourceIPAddress": "255.255.255.255",
+	"userAgent": "signin.amazonaws.com",
+	"requestParameters": {
+		"instancesSet": {
+			"items": [{
+					"instanceId": "i-1234567"
+				}
+			]
+		},
+		"force": false
+	},
+	"responseElements": {
+		"requestId": "123-123-123-8662-123",
+		"instancesSet": {
+			"items": [{
+					"instanceId": "i-123456",
+					"currentState": {
+						"code": 64,
+						"name": "stopping"
+					},
+					"previousState": {
+						"code": 16,
+						"name": "running"
+					}
+				}
+			]
+		}
+	},
+	"requestID": "123-123-4f8c-123-123",
+	"eventID": "42424242-3333-421a-42424-5555555",
+	"eventType": "AwsApiCall"
+}
